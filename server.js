@@ -14,7 +14,7 @@ var app = express();             // call express fucntion from express Lib
 var path = require('path');      // directory path 
 var server = require('http').createServer(app);  //create server using express Lib http 
 var io = require('socket.io').listen(server);   //import socket.io Lib and listen to the server from client side 
-var port = process.env.PORT || 3000;            // declaring enviroment port 
+var port = process.env.PORT || 8080;            // declaring enviroment port 
 
 server.listen(port, function () {
   console.log('Server listening at port %d', port);
